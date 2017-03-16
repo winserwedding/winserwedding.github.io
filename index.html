@@ -67,10 +67,10 @@
             <div class="arrow-wrapper-top" id="arrowUp"><span class="arrow arrowUp"></span></div>
             <div class="large">RSVP</div>
             <div>
-                <form action="https://formspree.io/winserwedding@gmail.com" method="POST">
-                    <input type="text" name="name">
-                    <input type="email" name="_replyto">
-                    <input type="text" name="comments">
+                <form id="RSVP" action="https://formspree.io/winserwedding@gmail.com" method="POST">
+                    <input class="text-field" type="text" required name="name" placeholder="Name"><br />
+                    <input class="text-field" type="email" required name="_replyto" placeholder="Email Address"><br />
+                    <textarea class="text-field" form="RSVP" required name="comments" placeholder="Your message" rows=3></textarea><br />
                     <input type="submit" value="Send">
                 </form>
             </div>

@@ -1,7 +1,10 @@
+body {
+    font-family: 'Old Standard TT', serif;
+}
+
 .section {
     text-align: center;
     color: #666;
-    font-family: 'Old Standard TT', serif;
 }
 
 .large {
@@ -67,4 +70,39 @@
     -moz-column-count: 2;
     /* Firefox */
     column-count: 2;
+}
+
+.text-field {
+    -webkit-appearance: none;
+    width: 30%;
+    font-size: 1.5em;
+    color: #666;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #666;
+    margin-bottom: 1%;
+    font-family: 'Old Standard TT', serif;
+}
+
+textarea {
+    resize: none;
+}
+
+.text-field:focus {
+    outline: none;
+    border-bottom: 2px solid #666;
+}
+
+input[type='submit'] {
+    -webkit-appearance: none;
+    height: 2em;
+    width: 3em;
+    color: #666;
+    font-family: 'Old Standard TT', serif;
+    font-size: 2em;
+    border-radius: 5px;
+    border: 1px solid #999;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 2em;
 }
