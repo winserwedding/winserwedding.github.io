@@ -19,8 +19,22 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 sectionsColor: ['#f2f2f2', '#e6e6e6', '#d9d9d9', '#cccccc'],
-                slidesNavigation: true
+                slidesNavigation: true,
+                onLeave: function() {
+                    var element = document.getElementById('arrowDown'),
+                        newone = element.cloneNode(true);
+                    newone.classList.remove('bounceOutDown');
+                    element.parentNode.replaceChild(newone, element);
+                }
             });
+            $('.arrowDown').on('click', function() {
+                //Breaks on first one after first click...
+                $.fn.fullpage.moveSectionDown();
+            });
+            $('.arrowUp').on('click', function() {
+                $.fn.fullpage.moveSectionUp();
+            });
+
         });
     </script>
 </head>
@@ -31,10 +45,11 @@
             <div class="large">Tom &amp; Hannah's Wedding</div>
             <div class="medium">14.07.18</div>
             <div class="small">Cookham &amp; Hurley, Berkshire</div>
+            <div class="tiny instructions">Scroll, swipe, click the arrows or use your keyboard to navigate</div>
             <div class="animated bounceOutDown arrow-wrapper-bottom" id="arrowDown"><span class="arrow arrowDown"></span></div>
         </div>
         <div class="section">
-            <div class="arrow-wrapper-top" id="arrowUp"><span class="arrow arrowUp"></span></div>
+            <div class="arrow-wrapper-top"><span class="arrow arrowUp"></span></div>
             <div class="slide">
                 <div class="large">Holy Trinity Church</div>
                 <div class="medium">Cookham, Berkshire</div>

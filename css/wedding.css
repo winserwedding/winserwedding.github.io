@@ -23,11 +23,22 @@ body {
     font-size: 1em;
 }
 
+.nano {
+    font-size: 0.5em;
+}
+
+.instructions {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+
 .arrow {
     border: solid #666;
     border-width: 0 10px 10px 0;
     display: inline-block;
     padding: 10px;
+    cursor: pointer;
 }
 
 .arrowDown {
@@ -44,12 +55,14 @@ body {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    z-index: 2;
 }
 
 .arrow-wrapper-top {
     position: absolute;
     top: 10px;
     right: 10px;
+    z-index: 2;
 }
 
 #arrowDown {
@@ -57,11 +70,6 @@ body {
     -webkit-animation-duration: 3s;
     animation-iteration-count: 5.01;
     -webkit-animation-iteration-count: 5.01;
-}
-
-#arrowUp {
-    animation-duration: 3s;
-    -webkit-animation-duration: 3s;
 }
 
 .maps {
