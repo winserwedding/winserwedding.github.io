@@ -2,10 +2,20 @@ body {
     font-family: 'Old Standard TT', serif;
 }
 
+body.code,
 .section {
     text-align: center;
     color: #666;
 }
+
+
+/* input[type="text"] {
+    border: none;
+    height: 40px;
+    width: 10%;
+    font-size: 2em;
+    color: #666;
+} */
 
 .large {
     font-size: 6em;
@@ -15,8 +25,20 @@ body {
     font-size: 3em;
 }
 
+.small-point {
+    font-size: 2.1em;
+}
+
 .small {
     font-size: 2em;
+}
+
+.smaller-than-small {
+    font-size: 1.5em;
+}
+
+.tiny-point {
+    font-size: 1.1em;
 }
 
 .tiny {
@@ -25,6 +47,12 @@ body {
 
 .nano {
     font-size: 0.5em;
+}
+
+.error {
+    font-size: 1em;
+    color: #FF0000;
+    display: none;
 }
 
 .instructions {
@@ -92,6 +120,10 @@ body {
     font-family: 'Old Standard TT', serif;
 }
 
+.text-field.short {
+    width: 125px;
+}
+
 textarea {
     resize: none;
 }
@@ -103,18 +135,49 @@ textarea {
 
 input[type='submit'] {
     -webkit-appearance: none;
-    height: 2em;
-    width: 3em;
+    height: 1.5em;
+    min-width: 3em;
     color: #666;
     font-family: 'Old Standard TT', serif;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
     border: 1px solid #999;
     background-color: #ccc;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.5em;
+    cursor: pointer;
 }
 
 .fp-slidesNav ul li a span {
     background: #666
+}
+
+.spacer {
+    padding-bottom: 10px;
+}
+
+.gifts {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.gift-methods {
+    width: 50%;
+    padding: 10px;
+}
+
+.list {
+    text-align: right;
+    border-right: thin solid #666;
+}
+
+.money {
+    text-align: left;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+    color: #666;
 }
