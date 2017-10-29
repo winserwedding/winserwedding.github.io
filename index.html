@@ -4,7 +4,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+    <meta name="apple-mobile-web-app-title" content="T&H Wedding">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="translucent-black">
     <title>Tom &amp Hannah</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/wedding.css" />
@@ -42,9 +44,9 @@
         var whichCode = function() {
             var code = document.getElementById("code").value.toString().toLowerCase().hashCode();
             if (code === -807124393) {
-                window.location.href = "./wedding.html";
+                window.location.href = "./wedding";
             } else if (code === -1546891729) {
-                window.location.href = "./evening.html"
+                window.location.href = "./evening"
             } else {
                 $("#error").show();
             }
