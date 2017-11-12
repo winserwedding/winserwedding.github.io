@@ -7,7 +7,6 @@
     <meta name="apple-mobile-web-app-title" content="T&H Wedding">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="manifest" href="manifest.json">
     <title>Tom &amp Hannah</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/wedding.css" />
@@ -34,11 +33,12 @@
             <div class="large">Tom &amp; Hannah's Wedding</div>
             <div class="medium">14.07.18</div>
             <div class="small">Type the code from your invitation and click "Enter"</div>
-            <div class="code">
+            <form class="code" onsubmit="event.preventDefault(); whichCode();">
                 <input type="text" id="code" class="text-field short" autofocus></input>
-                <input type="submit" value="Enter" onclick="whichCode()">
+                <input type="submit" value="Enter">
                 <div class="error" id="error">That didn't work - try typing the code again!</div>
-            </div>
+            </form>
+            <div class="turnme">Turn your phone to the side for a better experience</div>
         </div>
     </div>
     <script type="text/javascript">
@@ -51,7 +51,6 @@
             } else {
                 $("#error").show();
             }
-
         };
 
         String.prototype.hashCode = function() {
