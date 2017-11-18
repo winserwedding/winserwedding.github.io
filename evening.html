@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-title" content="T&H Wedding">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Tom &amp Hannah</title>
+    <title>Hannah &amp; Tom</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/wedding.css" />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -46,7 +46,7 @@
 <body>
     <div id="fullpage">
         <div class="section">
-            <div class="large">Tom &amp; Hannah's Wedding Reception</div>
+            <div class="large">Hannah &amp; Tom's Wedding Reception</div>
             <div class="medium">14.07.18</div>
             <div class="small">Hurley, Berkshire</div>
             <div class="tiny instructions">Scroll, swipe, click the arrows or use your keyboard to navigate</div>
@@ -55,23 +55,47 @@
         <div class="section">
             <div class="arrow-wrapper-top"><span class="arrow arrowUp"></span></div>
             <div class="slide">
-                <div class="large">Monks' Barn, Hurley</div>
-                <div class="small">6:45pm - Evening Guests arrive</div>
-                <div class="small">7:00pm - Speeches (and Bubbles)</div>
-                <div class="small">7:30pm - Dancing</div>
-                <div class="small">8:00pm - Evening food</div>
-                <div class="small">12:00am - Carriages</div>
+                <div class="large">Monks' Barn Hurley</div>
+                <div class="two-columns">
+                    <div class="left-col">
+                        <div class="small-schedule">6:45pm - Evening Guests arrive</div>
+                        <div class="small-schedule">7:00pm - Speeches (and more Bubbles)</div>
+                        <div class="small-schedule">7:30pm - Dancing</div>
+                        <div class="small-schedule">8:00pm - Evening food</div>
+                        <div class="small-schedule">12:00am - Carriages</div>
+                        <br />
+                        <div class="tiny">Secure parking is available in Hurley Riverside Park.</div>
+                        <div class="tiny">More details regarding this will be provided closer to the time.</div>
+                    </div>
+                    <div class="right-col">
+                        <div class="google-maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9924.228174452468!2d-0.81103!3d51.548853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85661393ddbd5e53!2sMonks&#39;+Barn!5e0!3m2!1sen!2suk!4v1511031708564" width="600" height="450" frameborder="0"
+                                style="border:0" allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="slide">
-                <div class="small">Monks' Barn</div>
-                <iframe src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCRoov6HESxcCVSpgeiz-o1skfQPSURk9w&center=51.54877,-0.81133&zoom=17" width="500" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <div class="tiny">Secure parking is available in Hurley Riverside Park</div>
-                <div class="tiny">(Please do not park directly outside the barn)</div>
+                <div class="large">Hotels</div>
+                <div class="three-columns">
+                    <div class="first-col small"><a href="http://www.theoldebell.co.uk/">The Olde Bell</a><br /><img width="45%%" src="images/oldebell.jpg" /></div>
+                    <div class="second-col small"><a href="http://crazyfoxhurley.com/">The Crazy Fox</a><br /><img width="100%" src="images/crazyfox.jpg" /></div>
+                    <div class="third-col">
+                        <div class="small"><a href="http://www.hurleyriversidepark.co.uk/">Hurley Riverside Park</a><br /><img width="50%" src="images/hrp.jpg" /></div>
+                    </div>
+                </div>
+                <br />
+                <div class="tiny">If all of the above are booked or don't suit, you could stay a little further away from the venue. There are both a Premier Inn and Travel Lodge in Maidenhead, which is around 15 minutes by taxi.</div>
             </div>
-            <div class="slide">
-                <div class="medium">We'd love for you to see us get married.</div>
-                <div class="medium">Click <a href="church">here</a> for more information.</div>
-            </div>
+            <div class="tiny instructions">Church</div>
+            <div class="arrow-wrapper-bottom"><span class="arrow arrowDown"></span></div>
+        </div>
+        <div class="section">
+            <div class="arrow-wrapper-top"><span class="arrow arrowUp"></span></div>
+            <div class="medium">We'd love for you to see us get married!</div>
+            <div class="medium">Click <a href="church">here</a> for more information.</div>
+            <div class="tiny instructions">RSVP</div>
             <div class="arrow-wrapper-bottom"><span class="arrow arrowDown"></span></div>
         </div>
         <div class="section">
@@ -81,12 +105,13 @@
             <div>
                 <form id="RSVP" action="https://formspree.io/winserwedding@gmail.com" method="POST">
                     <input class="text-field" type="text" required name="name" placeholder="Name"><br />
-                    <input class="text-field" type="email" required name="_replyto" placeholder="Email Address"><br />
+                    <input class="text-field" type="email" required name="_replyto" placeholder="Email"><br />
                     <textarea class="text-field" form="RSVP" required name="comments" placeholder="Your message" rows=3></textarea><br />
                     <input type="submit" value="Send">
                 </form>
             </div><br />
             <div class="smaller-than-small">Or, send us an email to winserwedding@gmail.com</div>
+            <div class="tiny instructions">Gift List</div>
             <div class="arrow-wrapper-bottom"><span class="arrow arrowDown"></span></div>
         </div>
         <div class="section">
@@ -94,21 +119,23 @@
             <div class="large">Gifts</div>
             <div class="spacer"></div>
             <div class="small-point">The most important thing to us is that you share our special day</div>
-            <div class="small-point">But if you'd like to treat us too, then there's more than just one way:</div>
+            <div class="small-point">But if you'd like to treat us too, there's more than just one way:</div>
             <div class="spacer"></div>
             <div class="gifts">
                 <div class="gift-methods list">
                     <div class="small">John Lewis Gift List</div>
-                    <div class="tiny-point">If you'd like to give us a gift, you'll find a list of ideas on</div>
-                    <div class "tiny-point">www.johnlewis.com/giftlist/tomandhannah/changethislink</div>
-                    <div class="tiny-point">The list opens for purchase on the xx of XXXX</div>
+                    <div class="tiny-point">Coming soon!</div>
+                    <div class="tiny-point">Please check back here in the Spring.</div>
+                    <!-- <div class="tiny-point">If you'd like to give us a gift, you'll find a list of ideas here:</div> -->
+                    <!-- <div class "tiny-point">www.johnlewis.com/giftlist/tomandhannah/changethislink</div> -->
+                    <!-- <div class="tiny-point">The list opens for purchase on the xx of XXXX</div> -->
                 </div>
                 <div class="gift-methods money">
                     <div class="small">Honeymoon Contributions</div>
                     <div class="tiny-point">If the gift list doesn't tickle your fancy, we'd be very grateful </div>
                     <div class="tiny-point">to receive a contribution towards our honeymoon.</div>
                     <div class="tiny-point">We're visiting Singapore, Bali and Lombok.</div>
-                    <div class="tiny-point">If cash isn't your style, we have a joint Honeymoon bank account. </div>
+                    <div class="tiny-point">If cash isn't your style, we have a joint Honeymoon bank account.</div>
                     <div class="tiny-point">Pop your name in as the reference so we can thank you.</div>
                     <div class="tiny-point">Sort Code: 070436 | Account #: 31575469</div>
                 </div>

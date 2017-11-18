@@ -45,6 +45,16 @@ body.code,
     font-size: 2em;
 }
 
+.small-schedule {
+    font-size: 1.4em;
+}
+
+@media screen and (min-width: 1300px) {
+    .small-schedule {
+        font-size: 2em;
+    }
+}
+
 .smaller-than-small {
     font-size: 1.5em;
 }
@@ -112,12 +122,53 @@ body.code,
     -webkit-animation-iteration-count: 5.01;
 }
 
-.maps {
-    -webkit-column-count: 2;
-    /* Chrome, Safari, Opera */
-    -moz-column-count: 2;
-    /* Firefox */
-    column-count: 2;
+.hotel-img {
+    width: 25%;
+}
+
+.two-columns {
+    display: flex;
+    align-items: center;
+}
+
+.left-col {
+    flex: 0 0 50%;
+}
+
+.right-col {
+    flex: 1;
+}
+
+.three-columns {
+    display: flex;
+}
+
+.first-col {
+    flex: 0 0 33%;
+}
+
+.second-col {
+    flex: 1;
+}
+
+.third-col {
+    flex: 1;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 65%;
+    height: 0;
+    overflow: hidden;
+    width: 88%;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .text-field {
@@ -192,4 +243,12 @@ a:visited,
 a:hover,
 a:focus {
     color: #666;
+}
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #666;
+}
+
+.fp-controlArrow.fp-prev {
+    border-color: transparent #666 transparent transparent;
 }
