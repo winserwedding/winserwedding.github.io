@@ -27,7 +27,7 @@
                         newone = element.cloneNode(true);
                     newone.classList.remove('bounceOutDown');
                     element.parentNode.replaceChild(newone, element);
-                    $('.arrowDown').on('click', function() {
+                    $('.arrowDown').off('click').on('click', function() {
                         $.fn.fullpage.moveSectionDown();
                     });
                 }

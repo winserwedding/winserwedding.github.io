@@ -20,23 +20,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                sectionsColor: ['#f2f2f2', '#e6e6e6', '#d9d9d9', '#cccccc'],
-                slidesNavigation: true,
-                onLeave: function() {
-                    var element = document.getElementById('arrowDown'),
-                        newone = element.cloneNode(true);
-                    newone.classList.remove('bounceOutDown');
-                    element.parentNode.replaceChild(newone, element);
-                    $('.arrowDown').on('click', function() {
-                        $.fn.fullpage.moveSectionDown();
-                    });
-                }
-            });
-            $('.arrowDown').on('click', function() {
-                $.fn.fullpage.moveSectionDown();
-            });
-            $('.arrowUp').on('click', function() {
-                $.fn.fullpage.moveSectionUp();
+                sectionsColor: ['#f2f2f2']
             });
 
         });
