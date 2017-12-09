@@ -17,18 +17,6 @@ body.code,
     color: #666;
 } */
 
-@media screen and (orientation:portrait) {
-    .turnme {
-        display: block;
-    }
-}
-
-@media screen and (orientation:landscape) {
-    .turnme {
-        display: none;
-    }
-}
-
 .large {
     font-size: 6em;
 }
