@@ -30,8 +30,12 @@
 <body>
     <div id="fullpage">
         <div class="section">
-            <div class="large">Hannah &amp; Tom's Wedding</div>
-            <div class="medium">14<sup>th</sup> July 2018</div>
+            <div class="large inline-flex">
+                <div id="hannah">Hannah</div>
+                <div id="andTom">&nbsp;&amp; Tom's Wedding</div>
+                <div id="henDo" class="hidden">Hen Do</div>
+            </div>
+            <div id="date" class="medium">14<sup>th</sup> July 2018</div>
             <div class="small">Type the code from your invitation and click "Enter"</div>
             <form class="code" onsubmit="event.preventDefault(); whichCode();">
                 <input type="text" id="code" class="text-field short" autofocus></input>
@@ -47,6 +51,32 @@
                 window.location.href = "./wedding";
             } else if (code === -1546891729) {
                 window.location.href = "./evening"
+            } else if (code === -728932818) {
+                var animationEnd = (function(el) {
+                    var animations = {
+                        animation: 'animationend',
+                        OAnimation: 'oAnimationEnd',
+                        MozAnimation: 'mozAnimationEnd',
+                        WebkitAnimation: 'webkitAnimationEnd',
+                    };
+
+                    for (var t in animations) {
+                        if (el.style[t] !== undefined) {
+                            return animations[t];
+                        }
+                    }
+                })(document.createElement('div'));
+
+                //animate
+                $("#andTom").addClass("animated hinge").one(animationEnd, function() {
+                    $("#andTom").remove();
+                    $("#hannah").html("Hannah's&nbsp;").addClass("animated slideInLeft");
+                    $("#henDo").removeClass("hidden").addClass("animated slideInRight");
+                    $("#date").html("11<sup>th</sup> - 13<sup>th</sup> May 2018").addClass("animated shake");
+                    setTimeout(function() {
+                        window.location.href = "./hens";
+                    }, 2000)
+                });
             } else {
                 $("#error").show();
             }

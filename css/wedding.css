@@ -110,6 +110,18 @@ body.code,
     -webkit-animation-iteration-count: 5.01;
 }
 
+.inline {
+    display: inline;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.hidden {
+    display: none;
+}
+
 .hotel-img {
     width: 25%;
 }
