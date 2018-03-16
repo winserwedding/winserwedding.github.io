@@ -18,46 +18,112 @@ body.code,
 } */
 
 .large {
-    font-size: 6em;
+    font-size: 5em;
 }
 
 .medium {
-    font-size: 3em;
-}
-
-.small-point {
-    font-size: 2.1em;
-}
-
-.small {
     font-size: 2em;
 }
 
-.small-schedule {
-    font-size: 1.4em;
-}
-
-@media screen and (min-width: 1300px) {
-    .small-schedule {
-        font-size: 2em;
-    }
-}
-
-.smaller-than-small {
-    font-size: 1.5em;
-}
-
-.tiny-point {
+.small-point {
     font-size: 1.1em;
 }
 
-.tiny {
+.small {
     font-size: 1em;
 }
 
-.nano {
+.small-schedule,
+.small-what-to-bring {
+    font-size: 0.7em;
+}
+
+.smaller-than-small {
     font-size: 0.5em;
 }
+
+.tiny-point {
+    font-size: 0.4em;
+}
+
+.tiny {
+    font-size: 0.3em;
+}
+
+.nano {
+    font-size: 0.2em;
+}
+
+
+/*@media only screen and (min-width: 768px) {
+    .large {
+        font-size: 6em;
+    }
+    .medium {
+        font-size: 2em;
+    }
+    .small-point {
+        font-size: 2.1em;
+    }
+    .small {
+        font-size: 1.5em;
+    }
+    .small-schedule {
+        font-size: 1.2em;
+    }
+    .smaller-than-small {
+        font-size: 1.5em;
+    }
+    .tiny-point {
+        font-size: 1.1em;
+    }
+    .tiny {
+        font-size: 1em;
+    }
+    .nano {
+        font-size: 0.5em;
+    }
+} */
+
+@media only screen and (min-width: 1024px) {
+    .large {
+        font-size: 6em;
+    }
+    .medium {
+        font-size: 3em;
+    }
+    .small-point {
+        font-size: 2.1em;
+    }
+    .small {
+        font-size: 2em;
+    }
+    .small-schedule {
+        font-size: 2em;
+    }
+    .small-what-to-bring {
+        font-size: 1em;
+    }
+    .smaller-than-small {
+        font-size: 1.5em;
+    }
+    .tiny-point {
+        font-size: 1.1em;
+    }
+    .tiny {
+        font-size: 1em;
+    }
+    .nano {
+        font-size: 0.5em;
+    }
+}
+
+
+/* @media screen and (min-width: 1300px) {
+    .small-schedule {
+        font-size: 2em;
+    }
+} */
 
 .error {
     font-size: 1em;
@@ -68,6 +134,12 @@ body.code,
 .instructions {
     position: absolute;
     bottom: 10px;
+    right: 60px;
+}
+
+.instructions-top {
+    position: absolute;
+    top: 10px;
     right: 60px;
 }
 
@@ -251,4 +323,51 @@ a:focus {
 
 .fp-controlArrow.fp-prev {
     border-color: transparent #666 transparent transparent;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.hens tr td:first-child {
+    text-align: left;
+    vertical-align: top;
+    width: 10%;
+}
+
+.hens td:last-child {
+    text-align: right;
+}
+
+.hens-flex {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rhs {
+    text-align: left;
+    padding: 10px;
+}
+
+.lhs {
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .hens-flex {
+        flex-wrap: nowrap;
+    }
+    .hens-inner {
+        width: 50%;
+        padding: 10px;
+    }
+    .lhs {
+        text-align: right;
+        border-right: thin solid #666;
+    }
 }
