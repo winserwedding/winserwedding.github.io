@@ -14,7 +14,7 @@ body.code,
 }
 
 .large {
-    font-size: 6em;
+    font-size: 5em;
 }
 .medium {
     font-size: 3em;
@@ -166,8 +166,7 @@ body.code,
 
 .text-field {
     -webkit-appearance: none;
-    width: 30%;
-    font-size: 24px;
+    font-size: 40px;
     color: #666;
     background: transparent;
     border: none;
@@ -176,9 +175,6 @@ body.code,
     font-family: 'Old Standard TT', serif;
 }
 
-.text-field.short {
-    width: 125px;
-}
 
 textarea {
     resize: none;
