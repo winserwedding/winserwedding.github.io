@@ -13,121 +13,36 @@ body.code,
     background-color: #f2f2f2;
 }
 
-/* input[type="text"] {
-    border: none;
-    height: 40px;
-    width: 10%;
-    font-size: 2em;
-    color: #666;
-} */
-
-/* .large {
-    font-size: 5em;
+.large {
+    font-size: 6em;
 }
-
 .medium {
+    font-size: 3em;
+}
+.small-point {
+    font-size: 2.1em;
+}
+.small {
     font-size: 2em;
 }
-
-.small-point {
+.small-schedule {
+    font-size: 2em;
+}
+.small-what-to-bring {
+    font-size: 1.2em;
+}
+.smaller-than-small {
+    font-size: 1.5em;
+}
+.tiny-point {
     font-size: 1.1em;
 }
-
-.small {
+.tiny {
     font-size: 1em;
 }
-
-.small-schedule,
-.small-what-to-bring {
-    font-size: 0.7em;
-}
-
-.smaller-than-small {
+.nano {
     font-size: 0.5em;
 }
-
-.tiny-point {
-    font-size: 0.4em;
-}
-
-.tiny {
-    font-size: 0.3em;
-}
-
-.nano {
-    font-size: 0.2em;
-} */
-
-
-/*@media only screen and (min-width: 768px) {
-    .large {
-        font-size: 6em;
-    }
-    .medium {
-        font-size: 2em;
-    }
-    .small-point {
-        font-size: 2.1em;
-    }
-    .small {
-        font-size: 1.5em;
-    }
-    .small-schedule {
-        font-size: 1.2em;
-    }
-    .smaller-than-small {
-        font-size: 1.5em;
-    }
-    .tiny-point {
-        font-size: 1.1em;
-    }
-    .tiny {
-        font-size: 1em;
-    }
-    .nano {
-        font-size: 0.5em;
-    }
-} */
-
-/* @media only screen and (min-width: 768px) { */
-    .large {
-        font-size: 6em;
-    }
-    .medium {
-        font-size: 3em;
-    }
-    .small-point {
-        font-size: 2.1em;
-    }
-    .small {
-        font-size: 2em;
-    }
-    .small-schedule {
-        font-size: 2em;
-    }
-    .small-what-to-bring {
-        font-size: 1.2em;
-    }
-    .smaller-than-small {
-        font-size: 1.5em;
-    }
-    .tiny-point {
-        font-size: 1.1em;
-    }
-    .tiny {
-        font-size: 1em;
-    }
-    .nano {
-        font-size: 0.5em;
-    }
-/* } */
-
-
-/* @media screen and (min-width: 1300px) {
-    .small-schedule {
-        font-size: 2em;
-    }
-} */
 
 .error {
     font-size: 1em;
@@ -252,7 +167,7 @@ body.code,
 .text-field {
     -webkit-appearance: none;
     width: 30%;
-    font-size: 1.5em;
+    font-size: 24px;
     color: #666;
     background: transparent;
     border: none;
