@@ -217,10 +217,6 @@ input[type='submit'] {
     padding-bottom: 10px;
 }
 
-.big-spacer {
-    padding-bottom: 90px;
-}
-
 .hen-party-too-bottom{
     display: inline;
 }
@@ -236,6 +232,9 @@ input[type='submit'] {
     
     .hen-party-too-left {
         display: inline;
+    }
+    .big-spacer {
+        padding-bottom: 90px;
     }
 }
 
