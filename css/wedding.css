@@ -2,6 +2,15 @@ body {
     font-family: 'Old Standard TT', serif;
 }
 
+.special {
+    font-family: 'Great Vibes', cursive;
+    color: goldenrod;
+}
+
+.special.text{
+    font-size: 1.4em;    
+}
+
 body.code,
 .non-fp,
 .section {
@@ -29,7 +38,7 @@ body.code,
     font-size: 2em;
 }
 .small-what-to-bring {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 .smaller-than-small {
     font-size: 1.5em;
