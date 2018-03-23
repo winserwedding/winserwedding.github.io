@@ -217,8 +217,25 @@ input[type='submit'] {
     padding-bottom: 10px;
 }
 
-.big-spacer {
-    padding-bottom: 100px;
+.hen-party-too-bottom{
+    display: inline;
+}
+
+.hen-party-too-left {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hen-party-too-bottom{
+        display: none;
+    }
+    
+    .hen-party-too-left {
+        display: inline;
+    }
+    .big-spacer {
+        padding-bottom: 90px;
+    }
 }
 
 .gifts {
