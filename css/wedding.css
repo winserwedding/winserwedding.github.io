@@ -11,6 +11,15 @@ body {
     font-size: 1.4em;    
 }
 
+.mi5{
+    color: transparent;
+	text-shadow: 0 0 30px #666;
+}
+.mi5.special.text{
+    color: transparent;
+	text-shadow: 0 0 30px goldenrod;
+}
+
 body.code,
 .non-fp,
 .section {
@@ -262,6 +271,11 @@ a:visited,
 a:hover,
 a:focus {
     color: #666;
+}
+
+.mi5 a{
+    color: transparent;
+	text-shadow: 0 0 30px #666;
 }
 
 .fp-controlArrow.fp-next {
