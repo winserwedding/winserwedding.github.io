@@ -21,6 +21,7 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 sectionsColor: ['#f2f2f2', '#e6e6e6', '#d9d9d9', '#cccccc', '#b9b9b9'],
+                anchors: ['home', 'church', 'barn', 'accommodation', 'gifts'],
                 slidesNavigation: true,
                 onLeave: function() {
                     var element = document.getElementById('arrowDown'),
@@ -77,66 +78,50 @@
         </div>
         <div class="section">
             <div class="arrow-wrapper-top"><span class="arrow arrowUp"></span></div>
-            <div class="slide">
-                <div class="large">Monks' Barn Hurley</div>
-                <div class="two-columns">
-                    <div class="left-col">
-                        <div class="small-schedule">3:45pm - Fizz &amp; Canapés</div>
-                        <div class="small-schedule">4:30pm - Photographs</div>
-                        <div class="small-schedule">5:00pm - BBQ</div>
-                        <div class="small-schedule">6:45pm - Evening Guests arrive</div>
-                        <div class="small-schedule">7:00pm - Speeches (and more fizz)</div>
-                        <div class="small-schedule">7:30pm - Dancing</div>
-                        <div class="small-schedule">8:00pm - Evening food</div>
-                        <div class="small-schedule">12:00am - Carriages</div>
-                        <br />
-                        <div class="tiny">Secure parking is available in Hurley Riverside Park.</div>
-                        <div class="tiny">More details regarding this will be provided closer to the time.</div>
-                    </div>
-                    <div class="right-col">
-                        <div class="google-maps">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9924.228174452468!2d-0.81103!3d51.548853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85661393ddbd5e53!2sMonks&#39;+Barn!5e0!3m2!1sen!2suk!4v1511031708564" width="600" height="450" frameborder="0"
-                                style="border:0" allowfullscreen></iframe>
+            <div class="large">Monks' Barn Hurley</div>
+            <div class="two-columns">
+                <div class="left-col">
+                    <div class="small-schedule">3:45pm - Fizz &amp; Canapés</div>
+                    <div class="small-schedule">4:30pm - Photographs</div>
+                    <div class="small-schedule">5:00pm - BBQ</div>
+                    <div class="small-schedule">6:45pm - Evening Guests arrive</div>
+                    <div class="small-schedule">7:00pm - Speeches (and more fizz)</div>
+                    <div class="small-schedule">7:30pm - Dancing</div>
+                    <div class="small-schedule">8:00pm - Evening food</div>
+                    <div class="small-schedule">12:00am - Carriages</div>
+                    <br />
+                    <div class="tiny">Secure parking is available in Hurley Riverside Park.</div>
+                    <a href="./assets/Directions to the Barn.pdf" class="tiny">Click here for driving directions and parking information</a>
+                </div>
+                <div class="right-col">
+                    <div class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9924.228174452468!2d-0.81103!3d51.548853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85661393ddbd5e53!2sMonks&#39;+Barn!5e0!3m2!1sen!2suk!4v1511031708564" width="600" height="450" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
 
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="slide">
-                <div class="large">Accommodation</div>
-                <div class="three-columns">
-                    <div class="first-col small"><a href="http://www.theoldebell.co.uk/">The Olde Bell</a><br />
-                        <a href="http://www.theoldebell.co.uk/"><img width="45%%" src="images/oldebell.jpg" /></a>
-                    </div>
-                    <div class="second-col small"><a href="http://crazyfoxhurley.com/">The Crazy Fox</a><br />
-                        <a href="http://crazyfoxhurley.com/"><img width="100%" src="images/crazyfox.jpg" /></a>
-                    </div>
-                    <div class="third-col">
-                        <div class="small"><a href="http://www.hurleyriversidepark.co.uk/">Hurley Riverside Park</a><br />
-                            <a href="http://www.hurleyriversidepark.co.uk/"><img width="50%" src="images/hrp.jpg" /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tiny">If all of the above are booked or don't suit, you could stay a little further away from the venue.</div>
-                <div class="tiny">There are both a Premier Inn and Travel Lodge in Maidenhead, which is around 15 minutes by taxi.</div>
-            </div>
-            <div class="tiny instructions">RSVP</div>
+            <div class="tiny instructions">Accommodation</div>
             <div class="arrow-wrapper-bottom"><span class="arrow arrowDown"></span></div>
         </div>
         <div class="section">
             <div class="arrow-wrapper-top" id="arrowUp"><span class="arrow arrowUp"></span></div>
-            <div class="large">RSVP</div>
-            <div class="smaller-than-small">Fill in the form below</div><br />
-            <div>
-                <form id="RSVP" action="https://formspree.io/winserwedding@gmail.com" method="POST">
-                    <input class="text-field" type="text" required name="name" placeholder="Name"><br />
-                    <input class="text-field" type="email" required name="_replyto" placeholder="Email"><br />
-                    <textarea class="text-field" form="RSVP" required name="comments" placeholder="Your message" rows=3></textarea><br />
-                    <input type="submit" value="Send">
-                </form>
-            </div><br />
-            <div class="smaller-than-small">Or, send us an email to
-                <a href="mailto:winserwedding@gmail.com?Subject=RSVP">winserwedding@gmail.com</a></div>
+            <div class="large">Accommodation</div>
+            <div class="three-columns">
+                <div class="first-col small"><a href="http://www.theoldebell.co.uk/">The Olde Bell</a><br />
+                    <a href="http://www.theoldebell.co.uk/"><img width="45%%" src="images/oldebell.jpg" /></a>
+                </div>
+                <div class="second-col small"><a href="http://crazyfoxhurley.com/">The Crazy Fox</a><br />
+                    <a href="http://crazyfoxhurley.com/"><img width="100%" src="images/crazyfox.jpg" /></a>
+                </div>
+                <div class="third-col">
+                    <div class="small"><a href="http://www.hurleyriversidepark.co.uk/">Hurley Riverside Park</a><br />
+                        <a href="http://www.hurleyriversidepark.co.uk/"><img width="50%" src="images/hrp.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tiny">If all of the above are booked or don't suit, you could stay a little further away from the venue.</div>
+            <div class="tiny">There are both a Premier Inn and Travel Lodge in Maidenhead, which is around 15 minutes by taxi.</div>
             <div class="tiny instructions">Gifts</div>
             <div class="arrow-wrapper-bottom"><span class="arrow arrowDown"></span></div>
         </div>
@@ -149,12 +134,12 @@
             <div class="spacer"></div>
             <div class="gifts">
                 <div class="gift-methods list">
-                    <div class="small">John Lewis Gift List</div>
-                    <div class="tiny-point">Coming soon!</div>
-                    <div class="tiny-point">Please check back here in the Spring.</div>
-                    <!-- <div class="tiny-point">If you'd like to give us a gift, you'll find a list of ideas here:</div> -->
-                    <!-- <div class "tiny-point">www.johnlewis.com/giftlist/tomandhannah/changethislink</div> -->
-                    <!-- <div class="tiny-point">The list opens for purchase on the xx of XXXX</div> -->
+                    <div class="small ">John Lewis Gift List</div>
+                    <div class="tiny-point ">If you'd like to give us a gift, you'll find a list of ideas here:</div>
+                    <a class="smaller-than-small" href="https://www.johnlewisgiftlist.com/giftint/guestpassword?giftListNumber=740406">Our gift list</a>
+                    <div class="tiny-point ">The list opens for purchase on the 2
+                        <sup>nd</sup> of June. </div>
+                    <div class="tiny-point ">If you need the gift list number, it is 740406. There is no password.</div>
                 </div>
                 <div class="gift-methods money">
                     <div class="small">Honeymoon Contributions</div>
