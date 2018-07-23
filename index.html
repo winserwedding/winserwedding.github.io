@@ -35,85 +35,11 @@
             </div>
             <div id="date" class="medium">14
                 <sup>th</sup> July 2018</div>
-            <div class="small">Type the code from your invitation and click "Enter"</div>
-            <form class="code" onsubmit="event.preventDefault(); whichCode();">
-                <input type="text" id="code" class="text-field" autofocus  autocomplete="off" size="8"></input>
-                <input type="submit" value="Enter">
-                <div class="error" id="error">That didn't work - try typing the code again!</div>
-            </form>
+            <div class="small">Thank you for sharing our day! We had an amazing time.</div>
+            <div class="small">Coming soon: official photographs!</div>
         </div>
     </div>
-    <script type="text/javascript">
-        var whichCode = function () {
-            var code = document.getElementById("code").value.toString().toLowerCase().trim().hashCode();
-            var animationEnd = (function (el) {
-                var animations = {
-                    animation: 'animationend',
-                    OAnimation: 'oAnimationEnd',
-                    MozAnimation: 'mozAnimationEnd',
-                    WebkitAnimation: 'webkitAnimationEnd',
-                };
 
-                for (var t in animations) {
-                    if (el.style[t] !== undefined) {
-                        return animations[t];
-                    }
-                }
-            })(document.createElement('div'));
-            var animation = function (url) {
-                $("#andTom").addClass("animated hinge").one(animationEnd, function () {
-                    $("#andTom").remove();
-                    $("#hannah").html("Hannah's&nbsp;").addClass("animated slideInLeft");
-                    $("#henDo").removeClass("hidden").addClass("animated slideInRight");
-                    $("#date").html("11<sup>th</sup> - 13<sup>th</sup> May 2018").addClass("animated shake");
-                    setTimeout(function () {
-                        window.location.href = url;
-                    }, 2000)
-                });
-            }
-            switch (code) {
-                case -807124393:
-                    window.location.href = "./wedding";
-                    break;
-                case -1546891729:
-                    window.location.href = "./evening";
-                    break;
-                case -728932818:
-                    animation("./sh");
-                    break;
-                case -874826021:
-                    animation("./z");
-                    break;
-                case -1100392862:
-                    animation("./x");
-                    break;
-                case -1003160028:
-                    animation("./o");
-                    break;
-                case -224044681:
-                    animation("./p");
-                    break;
-                case 94848596:
-                    animation("./t");
-                    break;
-                default:
-                    $("#error").show();
-                    break;
-            }
-        };
-
-        String.prototype.hashCode = function () {
-            var hash = 0,
-                i, chr;
-            if (this.length === 0) return hash;
-            for (i = 0; i < this.length; i++) {
-                chr = this.charCodeAt(i);
-                hash = ((hash << 5) - hash) + chr;
-                hash |= 0; // Convert to 32bit integer
-            }
-            return hash;
-        };
-    </script>
 </body>
 
 </html>
